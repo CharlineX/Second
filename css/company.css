@@ -1,0 +1,32 @@
+body{
+	width: 100%;
+}
+header,footer{
+	width: 100%;
+	height: 50px;
+	background-color: #4c8ede;
+}
+header ul{
+	width: 1190px;
+	margin: 0 auto;
+}
+header ul li {
+	display: inline;
+	line-height: 50px;
+	padding: 17px 30px 17px 30px;
+}
+header ul li a{
+	font-size: 16px;
+	color: #fff
+}
+header ul .active{
+	background-color: #81ade2;
+}
+header ul .active a{
+	color: #333;
+}
+.message_con{
+	width: 1190px;
+	margin: 0 auto;
+	background-color: #8fc3f5;
+}

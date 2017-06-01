@@ -1,0 +1,206 @@
+body{
+	width: 100%;
+}
+header,footer{
+	width: 100%;
+	height: 50px;
+	background-color: #4c8ede;
+}
+header ul{
+	width: 1190px;
+	margin: 0 auto;
+}
+header ul li {
+	display: inline;
+	line-height: 50px;
+	padding: 17px 30px 17px 30px;
+}
+header ul li a{
+	font-size: 16px;
+	color: #fff
+}
+header ul .active{
+	background-color: #81ade2;
+}
+header ul .active a{
+	color: #333;
+}
+.nav{
+	width: 1190px;
+	height: 400px;
+	margin: 0 auto;
+	background-color: blue;
+}
+.nav_con{
+	float: left;
+	margin-top: 40px;
+	width: 1190px;
+	/*待定*/
+}
+.login{
+	float: left;
+	width: 600px;
+	height: 300px;
+	background-color: orange;
+}
+.weChat{
+	float: right;
+	width: 280px;
+	height: 280px;
+}
+.main{
+	width: 1190px;
+	margin: 0 auto;
+	height: 400px;
+	/*background-color: yellow;*/
+}
+#Jobfair，#Joblists{
+	position: relative;
+	color: #888;
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.f_explain,.l_explain{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.Jobfair .t1,.Jobfair .t2,.Jobfair .t3,.Jobfair .t4,.Jobfair .t5,.Jobfair .t6,.Jobfair .t7,.Jobfair .t8{
+    font-size: 14px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.el span.t1,.el span.t2,.el span.t3,.el span.t4,.el span.t5,.el span.t6,.el span.t7,.el span.t8{
+	width: 120px;
+	text-align: center;
+	display: inline-block;
+	border:1px solid;
+}
+.el{
+	text-align: center;
+}
+.el span.t1,.el span.t6{
+	width: 200px;
+}
+.Joblists .j1,.Joblists .j2,.Joblists .j3,.Joblists .j4,.Joblists .j5,.Joblists .j6,.Joblists .j7,.Joblists .j8,.Joblists .j9,.Joblists .j10，.Joblists .j11，.Joblists .j12，.Joblists .j13{
+
+	font-size: 14px;
+    overflow: hidden;
+    /*padding: 0 10px;*/
+}
+.jobl span.j1,.jobl span.j2,.jobl span.j3,.jobl span.j4,.jobl span.j5,.jobl span.j6,.jobl span.j7,.jobl span.j8,.jobl span.j9,.jobl span.j10,.jobl span.j11,.jobl span.j12,.jobl span.j13{
+	width: 50px;
+	padding: 0 0px;
+	display: inline-block;
+	border:1px solid;
+	text-align: center;
+}
+.jobl span.j1,.jobl span.j8,.jobl span.j9,.jobl span.j10,.jobl span.j11,.jobl span.j12,.jobl span.j13{
+	width: 100px;
+}
+.jobl span.j2{
+	width: 200px;
+}
+.el,.jobl{
+	/*text-align: center;*/
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	overflow: hidden;
+	border-bottom: 1px dotted #ddd;
+}
+.joblist{
+	margin-left: 10px;
+}
+.paging{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.p_box{
+	position: absolute;
+	width: 200%;
+	left: -50%;
+}
+.p_wp{
+	position: absolute;
+	margin-left: 50%;
+}
+.p_in{
+	position: relative;
+	float: left;
+	left: -50%;
+}
+.paging span{
+	line-height: 30px;
+}
+.paging ul{
+	height: 30px;
+}
+.paging li{
+	float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #FFF;
+}
+.paging li a{
+	display: block;
+    width: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #DDD;
+}
+.paging li.bk,.paging li.bk a{
+	width: 64px;
+}
+.paging li.on{
+	color: #FF6000;
+    border-color: transparent;
+}
+.paging li.bk span{
+    display: block;
+    color: #BBB;
+    font-size: 12px;
+    border: 1px solid #DDD;
+}
+.paging ul, .paging .td, .paging .mytxt, .paging .og_but {
+    float: left;
+    font-size: 14px;
+}
+.paging .mytxt {
+    width: 28px;
+    height: 28px;
+    font: 12px/28px "Microsoft YaHei";
+    color: #333;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #DDD;
+}
+.paging .og_but {
+    width: 45px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+}
+.foot_con{
+	width: 1190px;
+	margin: 0 auto;
+	line-height: 50px;
+	font-size: 14px;
+	color: #555;
+	text-align: center;
+}

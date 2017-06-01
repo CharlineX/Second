@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-family:Microsoft Yahei;
+}
+ul, ol,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+	font-size: 12px
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+em, i{
+	font-style:normal;
+}
+strong,b{
+	font-weight: bold;
+}
