@@ -51,10 +51,10 @@ header ul .active a{
 .main{
 	width: 1190px;
 	margin: 0 auto;
-	height: 400px;
+	/*height: 400px;*/
 	/*background-color: yellow;*/
 }
-#Jobfair，#Joblists{
+#Jobfair,#Joblists{
 	position: relative;
 	color: #888;
 	background-color: #fff;
@@ -68,10 +68,10 @@ header ul .active a{
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
-.Jobfair .t1,.Jobfair .t2,.Jobfair .t3,.Jobfair .t4,.Jobfair .t5,.Jobfair .t6,.Jobfair .t7,.Jobfair .t8{
+#Jobfair .t1,#Jobfair .t2,#Jobfair .t3,#Jobfair .t4,#Jobfair .t5,#Jobfair .t6,#Jobfair .t7,#Jobfair .t8{
     font-size: 14px;
     overflow: hidden;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
 }
 .el span.t1,.el span.t2,.el span.t3,.el span.t4,.el span.t5,.el span.t6,.el span.t7,.el span.t8{
 	width: 120px;
@@ -85,7 +85,7 @@ header ul .active a{
 .el span.t1,.el span.t6{
 	width: 200px;
 }
-.Joblists .j1,.Joblists .j2,.Joblists .j3,.Joblists .j4,.Joblists .j5,.Joblists .j6,.Joblists .j7,.Joblists .j8,.Joblists .j9,.Joblists .j10，.Joblists .j11，.Joblists .j12，.Joblists .j13{
+#Joblists .j1,#Joblists .j2,#Joblists .j3,#Joblists .j4,#Joblists .j5,#Joblists .j6,#Joblists .j7,#Joblists .j8,#Joblists .j9,#Joblists .j10,#Joblists .j11,#Joblists .j12,#Joblists .j13{
 
 	font-size: 14px;
     overflow: hidden;
@@ -117,8 +117,8 @@ header ul .active a{
 }
 .paging{
 	position: relative;
-	height: 30px;
-	line-height: 30px;
+	height: 40px;
+	line-height: 40px;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
@@ -126,6 +126,7 @@ header ul .active a{
 	position: absolute;
 	width: 200%;
 	left: -50%;
+	top: 5px;
 }
 .p_wp{
 	position: absolute;

@@ -25,8 +25,50 @@ header ul .active{
 header ul .active a{
 	color: #333;
 }
-.message_con{
+.main_com,.resume{
 	width: 1190px;
 	margin: 0 auto;
 	background-color: #8fc3f5;
+}
+.resume{
+	background-color: #dcf47b;
+}
+.re_list{
+	position: relative;
+	color: #888;
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: #333;
+}
+.r_explain{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.el span.t1,.el span.t2,.el span.t3,.el span.t4,.el span.t5,.el span.t6,.el span.t7,.el span.t8,.el span.t9{
+	width: 80px;
+	text-align: center;
+	display: inline-block;
+	border:1px solid;
+}
+.el{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	overflow: hidden;
+	border-bottom: 1px dotted #ddd;
+}
+.el span.t1,.el span.t8,.el span.t6{
+	width: 150px;
+}
+.el span.t2{
+	width: 190px;
+}
+.el span.t3 a,.el span.t9 a{
+	cursor: pointer;
+	text-decoration: underline;
 }

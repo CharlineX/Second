@@ -4,6 +4,7 @@
 		<meta charset="utf-8" /> 
 		<title>company</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/company.css">
 	</head>
 	<body>
@@ -32,8 +33,9 @@
 				</li>
 			</ul>
 		</header>
-		<div class="message_con">
-			<ul class="message">
+		<div class="main_com choose" >
+			<div class="revise"><a href="">修改</a></div>
+			<ul class="message" style="display: block">
 				<li>
 					<label class="mg_list">名称</label>：
 					<span class="mg_info">杭州科技有限公司</span>
@@ -120,7 +122,7 @@
 					<span class="mg_info">XXXXXXX</span>
 				</li>
 			</ul>
-			<div class="modify">
+			<div class="modify" >
 				<div>
 					<label class="">名称</label>
 					<strong>*</strong>
@@ -271,6 +273,77 @@
 					<span>
 						<textarea></textarea>
 					</span>
+				</div>
+			</div>
+		</div>
+		<div class="resume choose">
+			<div class="re_list">
+				<div class="sort">
+					<span>职位名称</span>
+					<select>
+						<option>工程师</option>
+						<option>建筑师</option>
+						<option>行政</option>
+						<option>后勤</option>
+					</select>
+					<span>进度</span>
+				</div>
+				<div class="el r_explain">
+					<span class="t1">投递日期</span>
+					<span class="t2">职位名</span>
+					<span class="t3">姓名</span>
+					<span class="t4">性别</span>
+					<span class="t5">年龄</span>
+					<span class="t6">简历状态</span>
+					<span class="t7">进度</span>
+					<span class="t8">面试日期</span>
+					<span class="t9">修改</span>
+				</div>
+				<div class="el">
+					<span class="t1">2017-05-02</span>
+					<span class="t2">建筑工程师</span>
+					<span class="t3"><a>XXX</a></span>
+					<span class="t4">男</span>
+					<span class="t5">21</span>
+					<span class="t6">已读</span>
+					<span class="t7">面试</span>
+					<span class="t8">2017-05-08</span>
+					<span class="t9"><a>修改</a></span>
+				</div>
+				<div class="el">
+					<span class="t1">2017-05-02</span>
+					<span class="t2">建筑工程师</span>
+					<span class="t3"><a>XXX</a></span>
+					<span class="t4">男</span>
+					<span class="t5">21</span>
+					<span class="t6">未读</span>
+					<span class="t7">面试</span>
+					<span class="t8">2017-05-08</span>
+					<span class="t9"><a>修改</a></span>
+				</div>
+				<div class="paging">
+					<div class="p_box">
+	                    <div class="p_wp">
+	                        <div class="p_in">
+	                            <ul>
+	                        		<li class="bk">
+	                        			<span>上一页</span>
+	                    			</li>
+	                    			<li class="on">1</li>
+	                    			<li><a href="">2</a></li>
+	                    			<li><a href="">3</a></li>
+	                    			<li><a href="">4</a></li>
+	                    			<li><a href="">5</a></li>
+	                    			<li><a href="">6</a></li>
+	                    			<li class="bk"><a href="">下一页</a></li>
+	                			</ul>
+	                			<span class="td">共20页，到第</span>
+	                			<input id="jump_page" class="mytxt" type="text" value="1">
+	                			<span class="td">页</span>
+	                			<span class="og_but" onclick="jumpPage('20');">确定</span>
+	                        </div>
+	                    </div>
+                	</div>
 				</div>
 			</div>
 		</div>
