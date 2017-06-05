@@ -14,18 +14,24 @@ header ul li {
 	display: inline;
 	line-height: 50px;
 	padding: 17px 30px 17px 30px;
+	color: #fff;
+	font-size: 16px;
 }
 header ul li a{
-	font-size: 16px;
-	color: #fff
+	/*font-size: 16px;*/
+	/*color: #fff*/
 }
-header ul .active{
+header ul li.active{
 	background-color: #81ade2;
-}
-header ul .active a{
 	color: #333;
 }
-.main_com,.resume{
+header ul li.active a{
+	/*color: #333;*/
+}
+.choose{
+	display: none;
+}
+.main_com,.resume,.job_lists,.user_list,.job_fair,.job_detail,.res_apply{
 	width: 1190px;
 	margin: 0 auto;
 	background-color: #8fc3f5;
@@ -33,13 +39,24 @@ header ul .active a{
 .resume{
 	background-color: #dcf47b;
 }
+.job_lists{
+	height: 200px;
+	background-color: #e18dc2;
+}
+.user_list{
+	height: 200px;
+	background-color: #d3f861;
+}
+.job_fair{
+	background-color: #f0c18e;
+}
 .re_list{
 	position: relative;
 	color: #888;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	background-color: #333;
+	/*background-color: #333;*/
 }
 .r_explain{
 	height: 30px;
@@ -62,10 +79,10 @@ header ul .active a{
 	overflow: hidden;
 	border-bottom: 1px dotted #ddd;
 }
-.el span.t1,.el span.t8,.el span.t6{
+.re_list div.el span.t1,.re_list div.el span.t8,.re_list div.el span.t6{
 	width: 150px;
 }
-.el span.t2{
+.re_list div.el span.t2{
 	width: 190px;
 }
 .el span.t3 a,.el span.t9 a{

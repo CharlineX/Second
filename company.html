@@ -10,30 +10,20 @@
 	<body>
 		<header>
 			<ul>
-				<li>
-					<a href="">首页</a>
-				</li>
-				<li class="home active">
-					<a href="">信息管理</a>
-				</li>
-				<li>
-					<a href="">应聘管理</a>
-				</li>
-				<li>
-					<a href="">职位发布</a>
-				</li>
-				<li>
-					<a href="">用户管理</a>
-				</li>
-				<li>
-					<a href="">招聘会</a>
-				</li>
-				<li>
-					<a href="">通知中心</a>
-				</li>
+				<li>首页</li>
+				<li class="home active">信息管理</li>
+				<li>应聘简历</li>
+				<li>职位管理</li>
+				<li>用户管理</li>
+				<li>招聘会</li>
+				<!-- <li>
+					<a href="">职位详情</a>
+				</li> -->
 			</ul>
 		</header>
-		<div class="main_com choose" >
+		<div class="choose"></div>
+		<!-- 信息管理 -->
+		<div class="main_com choose" style="display: block">
 			<div class="revise"><a href="">修改</a></div>
 			<ul class="message" style="display: block">
 				<li>
@@ -276,7 +266,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="resume choose">
+		<!-- 应聘简历 -->
+		<div class="resume choose" >
 			<div class="re_list">
 				<div class="sort">
 					<span>职位名称</span>
@@ -287,6 +278,11 @@
 						<option>后勤</option>
 					</select>
 					<span>进度</span>
+					<select>
+						<option>面试</option>
+						<option>待定</option>
+						<option>滤过</option>
+					</select>
 				</div>
 				<div class="el r_explain">
 					<span class="t1">投递日期</span>
@@ -321,7 +317,7 @@
 					<span class="t8">2017-05-08</span>
 					<span class="t9"><a>修改</a></span>
 				</div>
-				<div class="paging">
+				<!-- <div class="paging">
 					<div class="p_box">
 	                    <div class="p_wp">
 	                        <div class="p_in">
@@ -344,8 +340,101 @@
 	                        </div>
 	                    </div>
                 	</div>
+				</div> -->
+			</div>
+		</div>
+		<!-- 职位管理 -->
+		<div class="job_lists choose"></div>
+		<!-- 用户管理 -->
+		<div class="user_list choose"></div>
+		<!-- 招聘会 -->
+		<div class="job_fair choose">
+			<div class="re_list">
+				<div class="el j_explain">
+					<span class="t1">举办日期</span>
+					<span class="t2">开始时间</span>
+					<span class="t3">结束时间</span>
+					<span class="t4">性质</span>
+					<span class="t5">状态</span>
+					<span class="t6">人数</span>
+					<span class="t7">专业</span>
+					<span class="t8">地点</span>
+					<span class="t9">修改</span>
+				</div>
+				<div class="el fair">
+					<span class="t1">2017-06-06</span>
+					<span class="t2">2017-06-06</span>
+					<span class="t3">2017-06-10</span>
+					<span class="t4">宣讲会</span>
+					<span class="t5">已申请</span>
+					<span class="t6">3</span>
+					<span class="t7">计算机</span>
+					<span class="t8">杭州XXXXX</span>
+					<span class="t9"><a>修改</a></span>
+				</div>
+			</div>
+			<div class="jf_mod">
+				<div>
+					<label class="">举办日期</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
+				</div>
+				<div>
+					<label class="">开始日期</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
+				</div>
+				<div>
+					<label class="">结束日期</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
+				</div>
+				<div>
+					<label class="">性质</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
+				</div>
+				<div>
+					<label class="">状态</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
+				</div>
+				<div>
+					<label class="">人数</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
+				</div>
+				<div>
+					<label class="">专业</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
+				</div>
+				<div>
+					<label class="">地点</label>
+					<strong>*</strong>
+					<span>
+						<input type="text" name="">
+					</span>
 				</div>
 			</div>
 		</div>
+		<!-- 应聘管理 -->
+		<!-- <div class="res_apply choose"></div> -->
+		<script src="js/jquery@2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/company.js"></script>
 	</body>
 </html>
