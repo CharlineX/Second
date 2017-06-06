@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" /> 
-		<title>index test</title>
+		<title>学友通首页</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
@@ -24,9 +24,10 @@
 				<li>
 					<a href="">新闻中心</a>
 				</li>
+				<!-- <span><a href="login.html">登录</a></span> -->
 			</ul>
 		</header>
-		<div class="nav">
+		<!-- <div class="nav">
 			<div class="nav_con">
 				<div class="login">
 					
@@ -35,10 +36,12 @@
 					<img src="img/weChat.png" width="280px" height="280px">
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="main">
+			<div class="tab act">招聘会信息列表</div>
+			<div class="tab two">职位信息列表</div>
 			<!-- 招聘信息 -->
-			<div id="Jobfair">
+			<div id="Jobfair" class="chance" style="display: block">
 				<div class="el f_explain">
 					<span class="t1">企业名称</span>
 					<span class="t2">企业性质</span>
@@ -114,13 +117,13 @@
 				</div>
 			</div>
 			<!-- 职位信息 -->
-			<div id="Joblists">
+			<div id="Joblists" class="chance">
 				<div class="jobl l_explain">
 					<span class="j1">职位名称</span>
 					<span class="j2">企业名称</span>
 					<span class="j3">人数</span>
 					<span class="j4">薪资</span>
-					<!-- <span class="j5">性别</span> -->
+					
 					<span class="j6">学历</span>
 					<span class="j7">经验</span>
 					<span class="j8">发布日期</span>
@@ -129,8 +132,7 @@
 					<span class="j11">企业规模</span>
 					<span class="j12">所属行业</span>
 					<span class="j13">工作地点</span>
-					<!-- <span class="j9">身高</span>
-					<span class="j10">语言</span> 待定-->
+					
 				</div>
 				<div class="jobl joblist">
 					<span class="j1">
@@ -141,7 +143,7 @@
 					</span>
 					<span class="j3">1-3</span>
 					<span class="j4">5K-6K</span>
-					<!-- <span class="j5">男</span> -->
+					
 					<span class="j6">本科</span>
 					<span class="j7">1-2年</span>
 					<span class="j8">05-26</span>
@@ -150,53 +152,6 @@
 					<span class="j11">20人</span>
 					<span class="j12">制造业</span>
 					<span class="j13">杭州</span>
-					<!-- <span class="j14"></span>
-					<span class="j15"></span>
-					<span class="j16"></span> -->
-				</div>
-				<div class="jobl joblist">
-					<span class="j1">
-						<a href="" target="_blank" title="XX工程师">XX工程师</a>
-					</span>
-					<span class="j2">
-						<a href="" target="_blank" title="XXXX有限公司">XXXX有限公司</a>
-					</span>
-					<span class="j3">1-3</span>
-					<span class="j4">5K-6K</span>
-					<!-- <span class="j5">男</span> -->
-					<span class="j6">本科</span>
-					<span class="j7">1-2年</span>
-					<span class="j8">05-26</span>
-					<span class="j9">05-30</span>
-					<span class="j10">国企</span>
-					<span class="j11">20人</span>
-					<span class="j12">制造业</span>
-					<span class="j13">杭州</span>
-					<!-- <span class="j14"></span>
-					<span class="j15"></span>
-					<span class="j16"></span> -->
-				</div>
-				<div class="jobl joblist">
-					<span class="j1">
-						<a href="" target="_blank" title="XX工程师">XX工程师</a>
-					</span>
-					<span class="j2">
-						<a href="" target="_blank" title="XXXX有限公司">XXXX有限公司</a>
-					</span>
-					<span class="j3">1-3</span>
-					<span class="j4">5K-6K</span>
-					<!-- <span class="j5">男</span> -->
-					<span class="j6">本科</span>
-					<span class="j7">1-2年</span>
-					<span class="j8">05-26</span>
-					<span class="j9">05-30</span>
-					<span class="j10">国企</span>
-					<span class="j11">20人</span>
-					<span class="j12">制造业</span>
-					<span class="j13">杭州</span>
-					<!-- <span class="j14"></span>
-					<span class="j15"></span>
-					<span class="j16"></span> -->
 				</div>
 				<div class="paging">
 	                <div class="p_box">
@@ -227,5 +182,7 @@
 		<footer>
 			<div class="foot_con">中国科学院上海技术物理研究所杭州大江东空间信息技术研究院</div>
 		</footer>
+		<script src="js/jquery@2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>

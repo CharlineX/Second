@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>学友通登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+	</head>
+	<body>
+		<header></header>
+		<div class="xyt">
+			<div class="xyt_con">
+				<div class="login">
+					<input type="button" value="学生" style="background: #81ade2" />
+					<input type="button" value="用户" />
+					<input type="button" value="老师" />
+					<div class="log_con" style="display: block">
+						<div class=""></div>
+						<button>登录</button>
+					</div>
+					<div class="log_con">
+						<div class=""></div>
+						<button>申请</button>
+					</div>
+					<div class="log_con">
+						<div class="userName">
+							<label>登录名&nbsp;:</label>
+							<!-- <input type="text" name="" placeholder="请输入登录名"> -->
+						</div>
+						<div class="passWord">
+							<label>密&nbsp;&nbsp;码&nbsp;:</label>
+							<!-- <input type="password" name="" placeholder="请输入密码"> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<footer></footer>
+		<script type="text/javascript">
+			window.onload= function () {
+            var aIpt=document.querySelectorAll('input');
+            var aDiv=document.querySelectorAll('.log_con');
+            console.log(aIpt,aDiv);
+            for(var i=0;i<aIpt.length;i++){
+                aIpt[i].index=i;
+                aIpt[i].onclick= function () {
+                    //先置之于死地 而后生
+                    //干掉所有
+                    for(var i=0;i<aIpt.length;i++){
+                        aIpt[i].style.background='none';
+                        aDiv[i].style.display='none';
+                    }
+                    //点亮自己
+                    this.style.background='#81ade2';
+                    //让谁显示出来
+                    aDiv[this.index].style.display='block';
+                }
+            }
+        }
+		</script>
+	</body>
+</html>

@@ -24,8 +24,10 @@
 		<div class="choose"></div>
 		<!-- 信息管理 -->
 		<div class="main_com choose" style="display: block">
-			<div class="revise"><a href="">修改</a></div>
-			<ul class="message" style="display: block">
+			<div class="rev_list">信息</div>
+			<div class="rev_list">修改</div>
+			<ul class="message ch_main" style="display: block">
+
 				<li>
 					<label class="mg_list">名称</label>：
 					<span class="mg_info">杭州科技有限公司</span>
@@ -112,7 +114,7 @@
 					<span class="mg_info">XXXXXXX</span>
 				</li>
 			</ul>
-			<div class="modify" >
+			<div class="modify ch_main" style="display:none">
 				<div>
 					<label class="">名称</label>
 					<strong>*</strong>
@@ -346,7 +348,24 @@
 		<!-- 职位管理 -->
 		<div class="job_lists choose"></div>
 		<!-- 用户管理 -->
-		<div class="user_list choose"></div>
+		<div class="user_list choose">
+			<div class="re_list">
+				<div class="el j_explain">
+					<span class="t1">职位名称</span>
+					<span class="t2">单位名</span>
+					<span class="t3">状态</span>
+					<span class="t4">面试时间</span>
+					<span class="t5">进度</span>
+				</div>
+				<div class="el fair">
+					<span class="t1">建筑师</span>
+					<span class="t2">XXXXXX有限公司</span>
+					<span class="t3">已读</span>
+					<span class="t4">2017-06-06</span>
+					<span class="t5">面试</span>
+				</div>
+			</div>
+		</div>
 		<!-- 招聘会 -->
 		<div class="job_fair choose">
 			<div class="re_list">
@@ -371,6 +390,30 @@
 					<span class="t7">计算机</span>
 					<span class="t8">杭州XXXXX</span>
 					<span class="t9"><a>修改</a></span>
+				</div>
+				<div class="paging">
+					<div class="p_box">
+	                    <div class="p_wp">
+	                        <div class="p_in">
+	                            <ul>
+	                        		<li class="bk">
+	                        			<span>上一页</span>
+	                    			</li>
+	                    			<li class="on">1</li>
+	                    			<li><a href="">2</a></li>
+	                    			<li><a href="">3</a></li>
+	                    			<li><a href="">4</a></li>
+	                    			<li><a href="">5</a></li>
+	                    			<li><a href="">6</a></li>
+	                    			<li class="bk"><a href="">下一页</a></li>
+	                			</ul>
+	                			<span class="td">共20页，到第</span>
+	                			<input id="jump_page" class="mytxt" type="text" value="1">
+	                			<span class="td">页</span>
+	                			<span class="og_but" onclick="jumpPage('20');">确定</span>
+	                        </div>
+	                    </div>
+                	</div>
 				</div>
 			</div>
 			<div class="jf_mod">
@@ -430,6 +473,7 @@
 						<input type="text" name="">
 					</span>
 				</div>
+				<button>申请</button>
 			</div>
 		</div>
 		<!-- 应聘管理 -->
