@@ -16,17 +16,11 @@ header ul li {
 	padding: 17px 30px 17px 30px;
 	color: #fff;
 	font-size: 16px;
-}
-header ul li a{
-	/*font-size: 16px;*/
-	/*color: #fff*/
+	cursor: pointer;
 }
 header ul li.active{
 	background-color: #81ade2;
 	color: #333;
-}
-header ul li.active a{
-	/*color: #333;*/
 }
 .choose{
 	display: none;
@@ -34,11 +28,10 @@ header ul li.active a{
 .main_com,.resume,.job_lists,.user_list,.job_fair,.job_detail,.res_apply{
 	width: 1190px;
 	margin: 0 auto;
-	background-color: #8fc3f5;
 }
-.resume{
-	background-color: #dcf47b;
-}
+/*.resume{
+	margin-top: 50px;
+}*/
 .job_lists{
 	height: 200px;
 	background-color: #e18dc2;
@@ -47,16 +40,18 @@ header ul li.active a{
 	height: 200px;
 	background-color: #d3f861;
 }
-.job_fair{
-	background-color: #f0c18e;
+.job_fair,.resume{
+	margin-top: 50px;
+	
+}
+.job_fair .re_list,.resume .re_list{
+	border-top: 1px solid #ddd;
 }
 .re_list{
 	position: relative;
 	color: #888;
-	/*background-color: #fff;*/
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	/*background-color: #333;*/
 }
 .r_explain{
 	height: 30px;
@@ -65,7 +60,7 @@ header ul li.active a{
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
-.el span.t1,.el span.t2,.el span.t3,.el span.t4,.el span.t5,.el span.t6,.el span.t7,.el span.t8,.el span.t9{
+.el span.t1,.el span.t2,.el span.t3,.el span.t4,.el span.t5,.el span.t6,.el span.t7,.el span.t8,.el span.t9,.el span.t10{
 	width: 80px;
 	text-align: center;
 	display: inline-block;
@@ -82,10 +77,108 @@ header ul li.active a{
 .re_list div.el span.t1,.re_list div.el span.t8,.re_list div.el span.t6{
 	width: 150px;
 }
-.re_list div.el span.t2{
-	width: 190px;
+.fair span.t1,.fair span.t2,.fair span.t3,.fair span.t4,.fair span.t5,.fair span.t6,.fair span.t7,.fair span.t8,.fair span.t9,.fair span.t10{
+	width: 70px;
+	text-align: center;
+	display: inline-block;
+	border:1px solid;
 }
-.el span.t3 a,.el span.t9 a{
+.fair span.t2,.fair span.t3{
+	width: 150px;
+}
+.re_list div.el span.t2{
+	width: 160px;
+}
+.el span.t3 a,.el span.t9 a,.fair span.t10 a{
 	cursor: pointer;
 	text-decoration: underline;
+}
+.mag_list,.ch_main{
+	float: left;
+}
+.mag_list{
+	width: 120px;
+	height: 62px;
+	/*background-color: orange;*/
+	margin-left: 30px;
+	margin-top: 50px;
+	border-top:1px solid  #4c8ede;
+	border-left: 1px solid  #4c8ede;
+	border-right: 1px solid  #4c8ede;
+}
+.rev_list{
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-bottom: 1px solid #4c8ede;
+	cursor: pointer;
+}
+.rev_act{
+	color: #333;
+	background-color: #f6f45d;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-bottom: 1px solid #4c8ede;
+}
+.ch_main{
+	margin-left: 66px;
+	margin-top: 40px;
+}
+.ch_main li{
+	height: 30px;
+}
+.ch_main .mg_list{
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	display: inline-block;
+}
+.ch_main li span{
+	margin-left: 10px;
+}
+.modify div{
+	height: 30px;
+	line-height: 30px;
+}
+.modify div.chf{
+	/*height: 50px;*/
+}
+.modify div.chf label{
+	width: 140px;
+}
+.modify div.jian{
+	height: 100px;
+	position: relative;
+}
+.modify div.jian label{
+	position: absolute;
+	top: 0;
+}
+.modify div.jian strong{
+	position: absolute;
+	left: 102px;
+}
+.modify div.jian span{
+	position: absolute;
+	top: 0;
+	left: 115px;
+}
+.modify div strong{
+	color: red;
+}
+.modify div label{
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+	display: inline-block;
+}
+.modify div.anniu{
+	height: 50px;
+}
+.anniu button{
+	width: 60px;
+	height: 30px;
 }

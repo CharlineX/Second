@@ -32,20 +32,15 @@ header .login{
 	width: 350px;
 	height: 350px;
 	border: 1px solid red;
-	z-index: 999;
 }
 .main{
-	z-index: -1;
 	width: 1190px;
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 20px;
 	position: relative;
-	/*height: 400px;*/
-	/*background-color: yellow;*/
 }
 .tab{
-	/*position: relative;*/
 	width: 180px;
 	height: 40px;
 	color: #222;
@@ -56,7 +51,6 @@ header .login{
 	border-left:1px solid #ddd;
 	border-right:1px solid #ddd; 
 	display: inline-block;
-	/*background-color: #4c8ede;*/
 	border-top-left-radius:0.5em;
 	border-top-right-radius:0.5em;
 }
@@ -84,7 +78,6 @@ header .login{
 #Jobfair,#Joblists{
 	position: relative;
 	color: #888;
-	/*background-color: #fff;*/
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 }
@@ -98,13 +91,11 @@ header .login{
 #Jobfair .t1,#Jobfair .t2,#Jobfair .t3,#Jobfair .t4,#Jobfair .t5,#Jobfair .t6,#Jobfair .t7,#Jobfair .t8{
     font-size: 14px;
     overflow: hidden;
-    /*padding: 0 10px;*/
 }
 .el span.t1,.el span.t2,.el span.t3,.el span.t4,.el span.t5,.el span.t6,.el span.t7,.el span.t8{
 	width: 120px;
 	text-align: center;
 	display: inline-block;
-	/*border:1px solid;*/
 }
 .el{
 	text-align: center;
@@ -113,17 +104,13 @@ header .login{
 	width: 200px;
 }
 #Joblists .j1,#Joblists .j2,#Joblists .j3,#Joblists .j4,#Joblists .j5,#Joblists .j6,#Joblists .j7,#Joblists .j8,#Joblists .j9,#Joblists .j10,#Joblists .j11,#Joblists .j12,#Joblists .j13{
-
 	font-size: 14px;
     overflow: hidden;
-    /*padding: 0 10px;*/
 }
 .jobl span.j1,.jobl span.j2,.jobl span.j3,.jobl span.j4,.jobl span.j6,.jobl span.j7,.jobl span.j8,.jobl span.j9,.jobl span.j10,.jobl span.j11,.jobl span.j12,.jobl span.j13{
 	width: 50px;
-	/*padding: 0 0px;*/
 	text-align: center;
 	display: inline-block;
-	/*margin: 0 auto;*/
 	border:1px solid;
 	
 }
@@ -134,7 +121,6 @@ header .login{
 	width: 200px;
 }
 .el,.jobl{
-	/*text-align: center;*/
 	height: 40px;
 	line-height: 40px;
 	font-size: 14px;
@@ -153,8 +139,7 @@ header .login{
 }
 .p_box{
 	position: absolute;
-	width: 200%;
-	left: -50%;
+	width: 1190px;
 	top: 5px;
 }
 .p_wp{
@@ -231,7 +216,6 @@ footer{
 	bottom: 0;
 }
 .foot_con{
-	
 	width: 1190px;
 	margin: 0 auto;
 	line-height: 50px;

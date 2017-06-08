@@ -12,36 +12,43 @@
 		<div class="xyt">
 			<div class="xyt_con">
 				<div class="login">
-					<input type="button" value="学生" style="background: #81ade2" />
-					<input type="button" value="用户" />
-					<input type="button" value="老师" />
-					<div class="log_con" style="display: block">
-						<div class=""></div>
-						<button>登录</button>
+					<div class="an">
+						<input type="button" value="学生" style="background: #f6f45d" />
+						<input type="button" value="用户" />
+						<input type="button" value="老师" />
 					</div>
-					<div class="log_con">
-						<div class=""></div>
-						<button>申请</button>
-					</div>
-					<div class="log_con">
-						<div class="userName">
-							<label>登录名&nbsp;:</label>
-							<!-- <input type="text" name="" placeholder="请输入登录名"> -->
+					<div class="bl_con">
+						<div class="log_con" style="display: block">
+							<div class="picture"><img src="img/weChat.png"></div>
+							<button>登录</button>
 						</div>
-						<div class="passWord">
-							<label>密&nbsp;&nbsp;码&nbsp;:</label>
-							<!-- <input type="password" name="" placeholder="请输入密码"> -->
+						<div class="log_con">
+							<div class="picture"><img src="img/weChat.png"></div>
+							<button>申请加入</button>
+						</div>
+						<div class="log_con">
+							<div class="userName">
+								<label>登录名&nbsp;:</label>
+								<input type="text" name="" placeholder="请输入登录名">
+							</div>
+							<div class="passWord">
+								<label>密&nbsp;&nbsp;码&nbsp;:</label>
+								<input type="password" name="" placeholder="请输入密码">
+							</div>
+							<button>登录</button>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 			
 		</div>
 		<footer></footer>
+		<script type="text/javascript" src="js/jquery@2.2.4.min.js"></script>
 		<script type="text/javascript">
 			window.onload= function () {
-            var aIpt=document.querySelectorAll('input');
-            var aDiv=document.querySelectorAll('.log_con');
+            var aIpt=$('.an input');
+            var aDiv=$('.log_con');
             console.log(aIpt,aDiv);
             for(var i=0;i<aIpt.length;i++){
                 aIpt[i].index=i;
@@ -53,7 +60,7 @@
                         aDiv[i].style.display='none';
                     }
                     //点亮自己
-                    this.style.background='#81ade2';
+                    this.style.background='#f6f45d';
                     //让谁显示出来
                     aDiv[this.index].style.display='block';
                 }
