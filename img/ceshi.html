@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button class="button">请点我</button>
+    
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script>
+    window.onload(function () {
+        var sjm = "37g337Q99hAP0KShTqhhn9ZI11lLpONT";
+        location.href=
+    })
+    $(".button").click(function () {
+        $.ajax({
+            dataType:"json",
+            type:"post",
+            url:"http://192.168.1.139:8080/SchoolMatesSystem/stu/",
+            data:{},
+            success:function () {
+                console.log("success");
+            },
+            error:function () {
+                console.log("error");
+            }
+        })
+    })
+</script>
+</html>

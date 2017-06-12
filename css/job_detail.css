@@ -1,0 +1,19 @@
+.welfare_box{
+    margin: 20px 0 20px 150px;
+}
+.welfare_box ul li{
+    border: solid 1px #cccccc;
+}
+.sel_welfare{
+    margin: 20px 0 20px 0;
+}
+/*省市区下拉框宽度设置*/
+.main_body .content_center .job_detail .distpicker5 .location-slt{
+    width: 18%;
+}
+.form-control.diplomas{
+    width: 18%;
+}
+.form-control.lang_command{
+    width: 18%;
+}

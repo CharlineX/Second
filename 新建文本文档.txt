@@ -1,0 +1,100 @@
+function turnToStandard(j){	
+	var DateMonth=TurnMonth(j.jofaiDate.split(",")[0].trim().split(" ")[0].trim());
+	var DateDay=j.jofaiDate.split(",")[0].trim().split(" ")[1].trim();
+	var DateYear=j.jofaiDate.split(",")[1].trim();
+	var Date=DateYear+"-"+DateMonth+"-"+DateDay
+	$("#holdTime_id").html(Date);//举办日期
+	var STime=j.jofaiStartime.split(" ")[3];
+	var ETime=j.jofaiEndtime.split(" ")[3];
+	$("#holdStart_id").html(STime);//开始时间
+	$("#holdEnd_id").html(ETime);//结束时间 
+	var type=j.jofaiType?"宣讲会":"供需会";
+	$("#holdJobFaiType_id").html(type);//性质 宣讲会或者xx						
+	//状态还需要在判断
+	$("#holdJobFaiStatus_id").html("审核通过");//状态
+	$("#holdPersonsCount_id").html(j.jofaiPersons);//人数
+	$("#holdjobFaiMajors_id").html(j.jofaiMajors);//专业
+	$("#holdjobFaiLocation_id").html(j.jofaiLocation);//地点
+}
+
+function TurnMonth(month) {
+	switch (month) {
+	case "一月":
+		month = "1";
+		break
+	case "二月":
+		month = "2";
+		break
+	case "三月":
+		month = "3";
+		break
+	case "四月":
+		month = "4";
+		break
+	case "五月":
+		month = "5";
+		break
+	case "六月":
+		month = "6";
+		break
+	case "七月":
+		month = "7";
+		break
+	case "八月":
+		month = "8";
+		break
+	case "九月":
+		month = "9";
+		break
+	case "十月":
+		month = "10";
+		break
+	case "十一月":
+		month = "11";
+		break
+	case "十二月":
+		month = "12";
+		break
+	case "Jan":
+		month = "1";
+		break	
+	case "Feb":
+		month = "2";
+		break	
+	case "Mar":
+		month = "3";
+		break
+	case "Apr":
+		month = "4";
+		break
+	case "May":
+		month = "5";
+		break	
+	case "Jun":
+		month = "6";
+		break	
+	case "June":
+		month = "6";
+		break
+	case "Jul":
+		month = "7";
+		break
+	case "Aug":
+		month = "8";
+		break	
+	case "Sep":
+		month = "9";
+		break	
+	case "Oct":
+		month = "10";
+		break
+	case "Nov":
+		month = "11";
+		break	
+	case "Dec":
+		month = "12";
+		break
+	default:
+	}
+	return month;
+}

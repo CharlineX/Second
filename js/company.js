@@ -43,4 +43,17 @@ for(var i=0;i<aRev.length;i++){
 		aMain[this.index].style.display="block";
 	}
 }
-console.log($(".pag li")[1])
+// console.log($(".pag li")[1])
+
+// $.ajax({
+//     type:"post",
+//     url:"http://192.168.1.140:8080/SchoolMatesSystem/JobFairView/getallEnterJofai",
+//     dataType:"JSON",
+//     data:{"pageSize":1,"currentPage":1},
+//     success:function (data) {
+//         console.log(data);
+//     },
+//     error:function () {
+//         console.log("失败");
+//     }
+// })
