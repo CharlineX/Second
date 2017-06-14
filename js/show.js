@@ -1,10 +1,13 @@
+	
 $.fn.extend({
 	myMethod : function(num){
-		
 		_data=num.data;
-		// _this=this;
-		
+		_this=this;
 		this.show(_data);
+		for(var i=0;i<_data.length;i++){
+			jobFairData=_data[i];
+			console.log(jobFairData.jofaiId);
+		}
 	},
 	turnMoth : function(month){
 		switch (month) {
@@ -98,15 +101,6 @@ $.fn.extend({
 				f=$end.split(" ")[3].trim();
 			var type = $type ? "宣讲会" : "供需会",
 				statu = $statu ? "申请" : "通过";
-			// console.log(arr[0].jofaiDate,arr[1].jofaiDate,arr[2].jofaiDate);
-			// var $cl=$(".jofai_list .t9"),
-			// 	$fair=$(".jobfair");
-			// 	$cl[i].index=i;
-			// $cl[i].onclick=function(){
-			// 	console.log("这是"+this.index);
-			// 	$fair[this.index].querySelector("span.t5").innerText==" ";
-			// }
-				// console.log(l);
 			var $el=$(".jofai_list");
 			$el.append("<div class=\"el fair jobfair\">"
 						+"<span class=\"t1\">"+d+"</span>"
@@ -117,16 +111,50 @@ $.fn.extend({
 						+"<span class=\"t6\">"+$major+"</span>"
 						+"<span class=\"t7\">"+$person+"</span>"
 						+"<span class=\"t8\">"+$location+"</span>"
-						+"<span class=\"t9\"><a>"+"修改"+"</a></span>"
-						+"</div>")
+						+"<span class=\"t9\" value='修改'><a>"+"修改"+"</a></span>"
+						+"</div>");
+			var $cl=$(".jofai_list .t9"),
+				$fair=$(".jobfair"),
+				dx=jobFairData.jofaiId;
 			
-			
+			// 	$cl[i].index=i;
+			// $cl[i].onclick=function(){
+			// 	console.log("这是"+this.index);
+			// 	var txt=$fair[this.index].querySelector("span.t5").innerText,
+			// 		val=$fair[this.index].querySelector("span.t9").innerText;
+			// 	console.log();
+			// 	_this.change(txt,val);
+			// }
 		}
+	},
+	change : function(txt,val){
+		if(txt=="申请"){
+			val="修改";
+			console.log("这里是修改键",val);
+			return val;
+		}else{
+			val="取消";
+			console.log("这里是取消键",val);
+			return val;
+		}
+
+		// console.log(data);
+	},
+	modify : function(){
+		$(".job_fair .first input").focus(function(){
+			$(".job_fair .first input").css("background-color","#000");
+		});
+		$(".job_fair .first input").val();
+		$(".job_fair .second input").val();
+		$(".job_fair .third input").val();
+		$(".job_fair .fifth input").val();
+		$(".job_fair .sixth input").val();
+		console.log($(".job_fair .fourth select")[0].options[$(".job_fair .fourth select")[0].selectedIndex].text)
 	}
 })
 var jofaiEnterInfoId=1,
 	cuurentPage=1,
-	pagesize=1, 
+	pagesize=3, 
 	urlHref=window.location.href,
 	guid="RuMJ18Oc0kEv39vVlQjhFKNeodYYDujA"; //urlHref.split("#")[1];
 $.ajax({
@@ -145,4 +173,13 @@ $.ajax({
 }).done(function(data){
 	console.log(data);
 	$("body").myMethod(data);
+})
+
+$(".job_fair .save").click(function(){
+		$(".job_fair .first input").val();
+		$(".job_fair .second input").val();
+		$(".job_fair .third input").val();
+		$(".job_fair .fifth input").val();
+		$(".job_fair .sixth input").val();
+		$(".job_fair .fourth select")[0].options[$(".job_fair .fourth select")[0].selectedIndex].text;
 })
