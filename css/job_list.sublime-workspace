@@ -1,0 +1,408 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"console"
+			],
+			[
+				"jofa",
+				"jofaiId"
+			],
+			[
+				"job",
+				"jobFairData"
+			],
+			[
+				"jb",
+				"jobFairData"
+			],
+			[
+				"mo",
+				"modify"
+			],
+			[
+				"c",
+				"cuurentPage"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"jo",
+				"jofaiDate"
+			],
+			[
+				"m",
+				"myMethod"
+			],
+			[
+				"_",
+				"_data"
+			],
+			[
+				"main",
+				"main_body"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ac",
+				"aCt"
+			],
+			[
+				"d",
+				"dotted"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"a",
+				"aCh"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"ban",
+				"background-color"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fla",
+				"float"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"pro",
+				"province"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/XYP/job_search.html",
+		"/E/XYP/jolists.js",
+		"/C/Users/Administrator/Documents/Tencent Files/919757303/FileRecv/新建文本文档.txt",
+		"/E/XYP/xieyinping/YouJia/js/youjia.js",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/xiaoyoutong_second/html/job_search.html",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/xiaoyoutong_second/html/userManage.html",
+		"/E/XYP/second/新建文本文档.txt",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/xiaoyoutong_second/css/common.css",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/新建文本文档(1).txt",
+		"/D/second/js/show.js",
+		"/D/second/company.html",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/xiaoyoutong_second/css/enter_user_login.css",
+		"/E/XYP/second/css/company.css",
+		"/E/XYP/second/css/login.css",
+		"/E/XYP/DJD/css/reset.css",
+		"/E/XYP/second/js/company.js",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/xiaoyoutong_second/js/job_detail_manage.js",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/xiaoyoutong_second/css/userManage.css",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/xiaoyoutong_second/css/job_detail.css",
+		"/E/XYP/second/state.html",
+		"/E/XYP/second/css/state.html",
+		"/E/XYP/xieyinping/phone.html",
+		"/E/XYP/second/login.html",
+		"/E/XYP/second/js/index.js",
+		"/D/Sec/append.html",
+		"/D/Sec/css/index.css",
+		"/E/XYP/second/css/index.css",
+		"/E/XYP/second/index.html",
+		"/E/XYP/second/company.html",
+		"/D/Work/YouJia/youjia.html",
+		"/D/选项卡3.html",
+		"/D/Work/YouJia/js/youjia.js",
+		"/D/选项卡的封装.html",
+		"/D/选项卡的封装2.html",
+		"/E/XYP/DJD/index.html",
+		"/E/XYP/second/company.css",
+		"/E/XYP/DJD/css/index.css",
+		"/E/XYP/部分前台代码完整的css，img，fonts/css/main.css",
+		"/E/XYP/second/css/company.html",
+		"/E/XYP/部分前台代码完整的css，img，fonts/personal_profile.html",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/schoolMatesSys/js/personal_profile_resume.js",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/schoolMatesSys/js/stantard_personal_profile.js",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/schoolMatesSys/personal_profile.html",
+		"/C/Users/Administrator/Documents/Tencent Files/919757303/FileRecv/demos/index.html",
+		"/E/XYP/xieyinping/liandong.html",
+		"/D/Work/3级联动/省市区联动.html",
+		"/D/Work/3级联动/js/xline.html",
+		"/D/Work/3级联动/js/cityJson.js",
+		"/E/XYP/部分前台代码完整的css，img，fonts/js/省市区三级联动插件js/distpicker.data.js",
+		"/E/XYP/xieyinping/area.json",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/schoolMatesSys/login.html",
+		"/E/SchoolMatesSys/branches/fuguihe/schoolMatesSys/js/personal_profile.js",
+		"/E/SchoolMatesSys/branches/fuguihe/schoolMatesSys/personal_profile.html",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/部分前台代码完整的css，img，fonts/js/doseSaveEduexpInfo.js",
+		"/E/SchoolMatesSys/branches/jinwangjing/js/demo.js",
+		"/E/BaiduNetdiskDownload/YouJia/youjia.html",
+		"/E/BaiduNetdiskDownload/YouJia/js/youjia.js",
+		"/E/SchoolMatesSys/branches/jinwangjing/js/npm.js",
+		"/E/XYP/部分前台代码完整的css，img，fonts/js/证书js/certificate_func.js",
+		"/E/SchoolMatesSys/branches/fuguihe/schoolMatesSys/js/兼容HTML5/respond.min.js",
+		"/E/SchoolMatesSys/branches/fuguihe/schoolMatesSys/js/兼容HTML5/html5shiv.js",
+		"/E/SchoolMatesSys/branches/fuguihe/schoolMatesSys/js/main.js",
+		"/E/XYP/部分前台代码完整的css，img，fonts/js/basicInfo.js",
+		"/E/SchoolMatesSys/branches/fuguihe/schoolMatesSys/js/bootstrap.js",
+		"/E/XYP/部分前台代码完整的css，img，fonts/js/年月日联动插件js/YMDClass.js",
+		"/E/XYP/部分前台代码完整的css，img，fonts/js/省市区三级联动插件js/main.js",
+		"/E/XYP/部分前台代码完整的css，img，fonts/js/省市区三级联动插件js/distpicker.min.js",
+		"/E/XYP/部分前台代码完整的css，img，fonts/js/证书js/certificate_arr.js",
+		"/C/Users/Administrator/Documents/WeChat Files/xyp_0306/Files/部分前台代码完整的css，img，fonts.rar"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"job_detail",
+			"page",
+			"detail",
+			"项目经验",
+			"href",
+			"应聘",
+			"ch_main",
+			"ul",
+			">\n",
+			"%;\n",
+			"320100"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "job_list.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

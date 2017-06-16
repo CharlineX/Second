@@ -21,6 +21,10 @@
 .job_list_ul li{
     display: block;
     float: left;
-    width:16%;
+    width:14%;
     border: 1px solid #4c8ede;
 }
+.job_list_ul_modify, .job_list_ul_cancel , .job_list_ul_delete{
+    cursor: pointer;
+}
+

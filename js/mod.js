@@ -1,9 +1,7 @@
-var jobFairData={
-	"jofaiId": 0
-}
+var jobFairData={};
 var jofaiEnterInfoId=1,
 	cuurentPage=1,
-	pagesize=3, 
+	pagesize=5, 
 	urlHref=window.location.href,
 	guid="RuMJ18Oc0kEv39vVlQjhFKNeodYYDujA";
 
@@ -89,8 +87,8 @@ function turnMoth(month){
 	return month;
 }
 function show(num){
-	var $id=num.jofaiId,$date=num.jofaiDate,$start=num.jofaiStartime,$end=num.jofaiEndtime,$type=num.jofaiType,$statu=num.jofaiStatus,$major=num.jofaiMajors,$person=num.jofaiPersons,$location=num.jofaiLocation;
-	console.log($id,$date,$start,$end)
+	var $qyid=num.jofaiEnterInfoId;$id=num.jofaiId,$date=num.jofaiDate,$start=num.jofaiStartime,$end=num.jofaiEndtime,$type=num.jofaiType,$statu=num.jofaiStatus,$major=num.jofaiMajors,$person=num.jofaiPersons,$location=num.jofaiLocation;
+	// console.log($id,$date,$start,$end)
 	var a=$date.split(",")[0].trim().split(" ")[0].trim(),
 		b=$date.split(",")[0].trim().split(" ")[1].trim(),
 		c=$date.split(",")[1].trim(),
@@ -110,20 +108,11 @@ function show(num){
 					+"<span class=\"t7\">"+$person+"</span>"
 					+"<span class=\"t8\">"+$location+"</span>"
 					+"<input style='display:none' value="+$id+">"
-					+"<span class=\"t9\" value='修改'><a>"+"修改"+"</a></span>"
+					+"<span style='display:none' class='a' value="+1+"></span>"
+					+"<span class=\"t9\" value="+$id+"><a>"+"修改"+"</a></span>"
 					+"</div>");
-		// mod_jobfair()
 }
 // function mod_jobfair(){
-	
-	var $cl=$(".jofai_list .t9"),
-		$fair=$(".jobfair");
-	console.log($cl.length);
-	for(var i=0;i<$cl.length;i++){
-		$cl[i].click(function(){
-			
-		})
-	}
 // 初始数据
 $.ajax({
 		url : 'http://192.168.1.139:8080/SchoolMatesSystem/jofai/getJobfair',
@@ -145,13 +134,6 @@ $.ajax({
 					for (var i = 0; i < list.length; i++) {
 						jobFairData = list[i];
 						show(jobFairData);
-						var x=jobFairData.jofaiId;
-						console.log("这里"+i,x);
-						// mod_jobfair(x)
-						// var att=$(".job_fair .jofai_list .t9");
-						
-						// console.log(x)
-						// createFirstDiv(projectExperience);
 					}
 				}
 			}else if(json.code==404){
@@ -164,14 +146,42 @@ $.ajax({
 			alert("访问服务器失败！");
 		},
 	})
-
-
-//保存
+//修改按钮操作
+var $cl=$(".job_fair .jofai_list .t9"),
+		$fair=$(".jobfair");
+	console.log($(".jobfair_mod .fourth select").value);
+	for(var i=0;i<$cl.length;i++){
+		$cl[i].index=i;
+		$cl[i].onclick=function(){
+			var y=this.index,
+				$first=$(".jobfair_mod .first input"),
+				$second=$(".jobfair_mod .second input"),
+				$third=$(".jobfair_mod .third input"),
+				$fourth=$(".jobfair_mod .fourth select"),
+				$fifth=$(".jobfair_mod .fifth input"),
+				$sixth=$(".jobfair_mod .sixth input");
+			var inne1=$('.job_fair .jofai_list .t1')[y].innerText,
+				inne2=$('.job_fair .jofai_list .t2')[y].innerText,
+				inne3=$('.job_fair .jofai_list .t3')[y].innerText,
+				inne4=$('.job_fair .jofai_list .t4')[y].innerText,
+				inne6=$('.job_fair .jofai_list .t6')[y].innerText,
+				inne7=$('.job_fair .jofai_list .t7')[y].innerText;
+			$first.attr("value",inne1);
+			$second.attr("value",inne2);
+			$third.attr("value",inne3);
+			$fourth.attr("value",inne4);
+			$fifth.attr("value",inne6);
+			$sixth.attr("value",inne7);
+		}
+	}
+//修改值传递
 $(".job_fair .save").click(function(){
 		var month=$(".job_fair .first .getMonth").val(),
 			day=$(".job_fair .first .getData").val();
+		jobFairData.jofaiEnterInfoId=1;
 		jobFairData.jofaiId=$(".job_fair .jofai_list input").val();
-		jobFairData.jofaiDate=("2017/"+month+"/"+day).trim();
+		// jobFairData.jofaiDate=("2017/"+month+"/"+day).trim();
+		jobFairData.jofaiDate=$(".job_fair .first input").val();
 		//都改成年月日
 		jobFairData.jofaiStartime=$(".job_fair .second input").val();
 		jobFairData.jofaiEndtime=$(".job_fair .third input").val();
@@ -179,7 +189,7 @@ $(".job_fair .save").click(function(){
 		jobFairData.jofaiPersons=$(".job_fair .sixth input").val();
 		jobFairData.jofaiType=$(".job_fair .fourth .xuan").val()=="宣讲会" ? 1 :0;
 		$.ajax({
-			url:"http://192.168.1.139:8080/SchoolMatesSystem/jofai/savejofai",
+			url:"http://192.168.1.139:8080/SchoolMatesSystem/jofai/updateJobfair?guid="+guid,
 			async : false,
 			data:jobFairData,
 			type:'post',
@@ -187,29 +197,51 @@ $(".job_fair .save").click(function(){
 				var jsonMap = JSON.parse(data);
 					if (jsonMap.code == 200) {
 						alert("成功");
+						alert(guid+"a");
 					}
 			},
 			error : function(){
-				alert("访问服务器失败！")
+				alert("访问服务器失败！");
+				alert(guid+"b");
 			}
 
 		})
 		console.log(jobFairData.jofaiDate,jobFairData.jofaiStartime,jobFairData.jofaiEndtime,jobFairData.jofaiMajors,jobFairData.jofaiDate,jobFairData.jofaiPersons)
 })
-
+//创建
+var addJobFair={},
+	$one=$(".jobfair_add .one input"),
+	$two=$(".jobfair_add .two input"),
+	$three=$(".jobfair_add .three input"),
+	$four=$(".jobfair_add .four input"),
+	$five=$(".jobfair_add .five input"),
+	$six=$(".jobfair_add .six select"),
+	$seven=$(".jobfair_add .seven input");
+$(".jobfair_add .add").click(function(){
+	addJobFair.jofaiEnterInfoId=1;
+	addJobFair.jofaiDate=$one.val();
+	addJobFair.jofaiStartime=$two.val();
+	addJobFair.jofaiEndtime=$three.val();
+	addJobFair.jofaiMajors=$four.val();
+	addJobFair.jofaiPersons=$five.val();
+	addJobFair.jofaiType=$six.val()=="宣讲会" ? 1 :0;
+	addJobFair.jofairStatus=$seven.val()=="申请" ? 0 : 1;
 $.ajax({
-	url:"http://192.168.1.139:8080/SchoolMatesSystem/jofai/updateJobfair",
+	url:"http://192.168.1.139:8080/SchoolMatesSystem/jofai/savejofai?guid="+guid,
 	type:"post",
 	dataType:"JSON",
-	data:{
-		"jofaiEnterInfoId":jofaiEnterInfoId,
-	    "cuurentPage":cuurentPage,
-	    "pagesize":pagesize,
-	    "guid":guid,
+	data:addJobFair,
+	success: function(data){
+				var jsonMap = JSON.parse(data);
+					if (jsonMap.code == 200) {
+						alert("成功");
+			}
+	},
+	error : function(){
+		alert("访问服务器失败！");
 	}
-}).done(function(data){
-	console.log("修改成功！");
 })
+})	
 
 $.ajax({
 	url:"http://192.168.1.139:8080/SchoolMatesSystem/jofai/getJobfair",
